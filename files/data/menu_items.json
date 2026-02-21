@@ -1,0 +1,202 @@
+[
+  {
+    "id": "BIG_MAC",
+    "name": "Big Mac",
+    "protein": "beef",
+    "spice": 0,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "QPC",
+    "name": "Quarter Pounder",
+    "protein": "beef",
+    "spice": 0,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "DOUBLE_BURGER",
+    "name": "Double Cheeseburger",
+    "protein": "beef",
+    "spice": 0,
+    "tier": 1,
+    "vegetarian": false
+  },
+  {
+    "id": "ANGUS",
+    "name": "Angus Deluxe",
+    "protein": "beef",
+    "spice": 0,
+    "tier": 3,
+    "vegetarian": false
+  },
+  {
+    "id": "MCRIB",
+    "name": "McRib",
+    "protein": "pork",
+    "spice": 1,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "BACON_EGG",
+    "name": "Bacon Egg McMuffin",
+    "protein": "pork",
+    "spice": 0,
+    "tier": 1,
+    "vegetarian": false
+  },
+  {
+    "id": "MCCHICKEN",
+    "name": "McChicken",
+    "protein": "chicken",
+    "spice": 1,
+    "tier": 1,
+    "vegetarian": false
+  },
+  {
+    "id": "SPICY_CHICKEN",
+    "name": "Spicy McChicken",
+    "protein": "chicken",
+    "spice": 2,
+    "tier": 1,
+    "vegetarian": false
+  },
+  {
+    "id": "CHICKEN_LEGEND",
+    "name": "Chicken Legend",
+    "protein": "chicken",
+    "spice": 1,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "GRILLED_CHICKEN",
+    "name": "Grilled Chicken Wrap",
+    "protein": "chicken",
+    "spice": 0,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "MCSPICY",
+    "name": "McSpicy Chicken",
+    "protein": "chicken",
+    "spice": 3,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "CHICKEN_MAHARAJA",
+    "name": "Chicken Maharaja Mac",
+    "protein": "chicken",
+    "spice": 3,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "FILLET_O_FISH",
+    "name": "Filet-O-Fish",
+    "protein": "fish",
+    "spice": 0,
+    "tier": 1,
+    "vegetarian": false
+  },
+  {
+    "id": "SHRIMP_BURGER",
+    "name": "Ebi Shrimp Burger",
+    "protein": "seafood",
+    "spice": 1,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "FISH_FILLET_DLX",
+    "name": "Fish Fillet Deluxe",
+    "protein": "fish",
+    "spice": 0,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "LAMB_WRAP",
+    "name": "Lamb Wrap",
+    "protein": "lamb",
+    "spice": 2,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "MCALOO_TIKKI",
+    "name": "McAloo Tikki",
+    "protein": "none",
+    "spice": 2,
+    "tier": 1,
+    "vegetarian": true
+  },
+  {
+    "id": "MCVEGGIE",
+    "name": "McVeggie",
+    "protein": "none",
+    "spice": 1,
+    "tier": 1,
+    "vegetarian": true
+  },
+  {
+    "id": "PANEER_BURGER",
+    "name": "McSpicy Paneer",
+    "protein": "dairy",
+    "spice": 3,
+    "tier": 2,
+    "vegetarian": true
+  },
+  {
+    "id": "VEGGIE_DELUXE",
+    "name": "Veggie Deluxe",
+    "protein": "none",
+    "spice": 1,
+    "tier": 2,
+    "vegetarian": true
+  },
+  {
+    "id": "FRIES",
+    "name": "French Fries",
+    "protein": "none",
+    "spice": 0,
+    "tier": 1,
+    "vegetarian": true
+  },
+  {
+    "id": "APPLE_PIE",
+    "name": "Apple Pie",
+    "protein": "none",
+    "spice": 0,
+    "tier": 1,
+    "vegetarian": true
+  },
+  {
+    "id": "MCFLURRY",
+    "name": "McFlurry",
+    "protein": "dairy",
+    "spice": 0,
+    "tier": 1,
+    "vegetarian": true
+  },
+  {
+    "id": "RICE_BURGER",
+    "name": "Rice Burger",
+    "protein": "chicken",
+    "spice": 1,
+    "tier": 2,
+    "vegetarian": false
+  },
+  {
+    "id": "TERIYAKI",
+    "name": "Teriyaki McBurger",
+    "protein": "chicken",
+    "spice": 1,
+    "tier": 2,
+    "vegetarian": false
+  }
+]

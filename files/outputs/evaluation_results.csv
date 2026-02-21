@@ -1,0 +1,6 @@
+country,jaccard,precision,recall
+India,0.917,0.917,1.0
+Japan,0.571,0.667,0.8
+Saudi Arabia,0.889,1.0,0.889
+Malaysia,0.818,0.818,1.0
+Turkey,0.875,0.875,1.0

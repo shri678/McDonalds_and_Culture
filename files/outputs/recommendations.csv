@@ -1,0 +1,191 @@
+country,rank,item_id,item_name,confidence_pct,protein,vegetarian,spice_level,cluster,halal_required
+Ethiopia,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,False
+Ethiopia,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,False
+Ethiopia,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,False
+Ethiopia,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,CHICKEN_DOMINANT,False
+Ethiopia,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,CHICKEN_DOMINANT,False
+Ethiopia,6,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,False
+Ethiopia,7,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,False
+Ethiopia,8,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,False
+Afghanistan,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Afghanistan,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Afghanistan,3,CHICKEN_LEGEND,Chicken Legend,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Afghanistan,4,LAMB_WRAP,Lamb Wrap,99.0,lamb,False,2,CHICKEN_DOMINANT,True
+Afghanistan,5,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Afghanistan,6,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Afghanistan,7,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Afghanistan,8,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Nepal,1,MCCHICKEN,McChicken,99.0,chicken,False,1,VEGETARIAN_HEAVY,False
+Nepal,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,VEGETARIAN_HEAVY,False
+Nepal,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,VEGETARIAN_HEAVY,False
+Nepal,4,FRIES,French Fries,99.0,none,True,0,VEGETARIAN_HEAVY,False
+Nepal,5,APPLE_PIE,Apple Pie,99.0,none,True,0,VEGETARIAN_HEAVY,False
+Nepal,6,MCFLURRY,McFlurry,99.0,dairy,True,0,VEGETARIAN_HEAVY,False
+Nepal,7,MCALOO_TIKKI,McAloo Tikki,91.4,none,True,2,VEGETARIAN_HEAVY,False
+Nepal,8,MCVEGGIE,McVeggie,91.4,none,True,1,VEGETARIAN_HEAVY,False
+Nepal,9,PANEER_BURGER,McSpicy Paneer,91.4,dairy,True,3,VEGETARIAN_HEAVY,False
+Nepal,10,VEGGIE_DELUXE,Veggie Deluxe,91.4,none,True,1,VEGETARIAN_HEAVY,False
+Nepal,11,CHICKEN_MAHARAJA,Chicken Maharaja Mac,65.3,chicken,False,3,VEGETARIAN_HEAVY,False
+Nepal,12,MCSPICY,McSpicy Chicken,34.7,chicken,False,3,VEGETARIAN_HEAVY,False
+Nepal,13,SHRIMP_BURGER,Ebi Shrimp Burger,34.7,seafood,False,1,VEGETARIAN_HEAVY,False
+Nepal,14,RICE_BURGER,Rice Burger,34.7,chicken,False,1,VEGETARIAN_HEAVY,False
+Cambodia,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Cambodia,2,MCSPICY,McSpicy Chicken,99.0,chicken,False,3,SEAFOOD_ADAPTED,False
+Cambodia,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Cambodia,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,SEAFOOD_ADAPTED,False
+Cambodia,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Cambodia,6,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Cambodia,7,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Cambodia,8,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+Cambodia,9,SPICY_CHICKEN,Spicy McChicken,56.4,chicken,False,2,SEAFOOD_ADAPTED,False
+Cambodia,10,FISH_FILLET_DLX,Fish Fillet Deluxe,43.6,fish,False,0,SEAFOOD_ADAPTED,False
+Cambodia,11,TERIYAKI,Teriyaki McBurger,43.6,chicken,False,1,SEAFOOD_ADAPTED,False
+Laos,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Laos,2,MCSPICY,McSpicy Chicken,99.0,chicken,False,3,SEAFOOD_ADAPTED,False
+Laos,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Laos,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,SEAFOOD_ADAPTED,False
+Laos,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Laos,6,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Laos,7,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Laos,8,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+Laos,9,SPICY_CHICKEN,Spicy McChicken,52.3,chicken,False,2,SEAFOOD_ADAPTED,False
+Laos,10,FISH_FILLET_DLX,Fish Fillet Deluxe,47.7,fish,False,0,SEAFOOD_ADAPTED,False
+Laos,11,TERIYAKI,Teriyaki McBurger,47.7,chicken,False,1,SEAFOOD_ADAPTED,False
+Myanmar,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Myanmar,2,MCSPICY,McSpicy Chicken,99.0,chicken,False,3,SEAFOOD_ADAPTED,False
+Myanmar,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Myanmar,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,SEAFOOD_ADAPTED,False
+Myanmar,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Myanmar,6,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Myanmar,7,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Myanmar,8,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+Myanmar,9,SPICY_CHICKEN,Spicy McChicken,55.5,chicken,False,2,SEAFOOD_ADAPTED,False
+Myanmar,10,FISH_FILLET_DLX,Fish Fillet Deluxe,44.5,fish,False,0,SEAFOOD_ADAPTED,False
+Myanmar,11,TERIYAKI,Teriyaki McBurger,44.5,chicken,False,1,SEAFOOD_ADAPTED,False
+Mozambique,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,False
+Mozambique,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,False
+Mozambique,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,False
+Mozambique,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,CHICKEN_DOMINANT,False
+Mozambique,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,CHICKEN_DOMINANT,False
+Mozambique,6,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,False
+Mozambique,7,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,False
+Mozambique,8,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,False
+Zambia,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Zambia,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,SEAFOOD_ADAPTED,False
+Zambia,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Zambia,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,SEAFOOD_ADAPTED,False
+Zambia,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Zambia,6,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Zambia,7,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Zambia,8,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+Iran,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Iran,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Iran,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Iran,4,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Iran,5,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Iran,6,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Iran,7,LAMB_WRAP,Lamb Wrap,98.6,lamb,False,2,CHICKEN_DOMINANT,True
+Iran,8,MCSPICY,McSpicy Chicken,75.2,chicken,False,3,CHICKEN_DOMINANT,True
+Iran,9,CHICKEN_LEGEND,Chicken Legend,51.0,chicken,False,1,CHICKEN_DOMINANT,True
+Iran,10,CHICKEN_MAHARAJA,Chicken Maharaja Mac,24.2,chicken,False,3,CHICKEN_DOMINANT,True
+Iran,11,SHRIMP_BURGER,Ebi Shrimp Burger,24.2,seafood,False,1,CHICKEN_DOMINANT,True
+Sudan,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Sudan,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Sudan,3,CHICKEN_LEGEND,Chicken Legend,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Sudan,4,LAMB_WRAP,Lamb Wrap,99.0,lamb,False,2,CHICKEN_DOMINANT,True
+Sudan,5,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Sudan,6,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Sudan,7,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Sudan,8,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Syria,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Syria,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Syria,3,LAMB_WRAP,Lamb Wrap,99.0,lamb,False,2,CHICKEN_DOMINANT,True
+Syria,4,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Syria,5,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Syria,6,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Syria,7,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Syria,8,CHICKEN_LEGEND,Chicken Legend,66.6,chicken,False,1,CHICKEN_DOMINANT,True
+Syria,9,MCSPICY,McSpicy Chicken,33.5,chicken,False,3,CHICKEN_DOMINANT,True
+Cuba,1,BIG_MAC,Big Mac,99.0,beef,False,0,SEAFOOD_ADAPTED,False
+Cuba,2,QPC,Quarter Pounder,99.0,beef,False,0,SEAFOOD_ADAPTED,False
+Cuba,3,DOUBLE_BURGER,Double Cheeseburger,99.0,beef,False,0,SEAFOOD_ADAPTED,False
+Cuba,4,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Cuba,5,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,SEAFOOD_ADAPTED,False
+Cuba,6,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Cuba,7,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Cuba,8,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Cuba,9,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+Cuba,10,LAMB_WRAP,Lamb Wrap,50.1,lamb,False,2,SEAFOOD_ADAPTED,False
+Cuba,11,ANGUS,Angus Deluxe,49.9,beef,False,0,SEAFOOD_ADAPTED,False
+Cuba,12,MCRIB,McRib,49.9,pork,False,1,SEAFOOD_ADAPTED,False
+Cuba,13,BACON_EGG,Bacon Egg McMuffin,49.9,pork,False,0,SEAFOOD_ADAPTED,False
+Cuba,14,CHICKEN_LEGEND,Chicken Legend,49.9,chicken,False,1,SEAFOOD_ADAPTED,False
+North Korea,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+North Korea,2,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+North Korea,3,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,SEAFOOD_ADAPTED,False
+North Korea,4,RICE_BURGER,Rice Burger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+North Korea,5,TERIYAKI,Teriyaki McBurger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+North Korea,6,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+North Korea,7,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+North Korea,8,APPLE_PIE,Apple Pie,70.0,none,True,0,SEAFOOD_ADAPTED,False
+North Korea,9,FISH_FILLET_DLX,Fish Fillet Deluxe,50.7,fish,False,0,SEAFOOD_ADAPTED,False
+North Korea,10,MCSPICY,McSpicy Chicken,50.7,chicken,False,3,SEAFOOD_ADAPTED,False
+North Korea,11,SPICY_CHICKEN,Spicy McChicken,49.3,chicken,False,2,SEAFOOD_ADAPTED,False
+Algeria,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Algeria,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Algeria,3,LAMB_WRAP,Lamb Wrap,99.0,lamb,False,2,CHICKEN_DOMINANT,True
+Algeria,4,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Algeria,5,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Algeria,6,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Algeria,7,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Algeria,8,CHICKEN_LEGEND,Chicken Legend,66.8,chicken,False,1,CHICKEN_DOMINANT,True
+Algeria,9,MCSPICY,McSpicy Chicken,66.8,chicken,False,3,CHICKEN_DOMINANT,True
+Libya,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Libya,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Libya,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Libya,4,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Libya,5,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Libya,6,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Libya,7,LAMB_WRAP,Lamb Wrap,99.0,lamb,False,2,CHICKEN_DOMINANT,True
+Libya,8,MCSPICY,McSpicy Chicken,75.1,chicken,False,3,CHICKEN_DOMINANT,True
+Libya,9,CHICKEN_LEGEND,Chicken Legend,51.5,chicken,False,1,CHICKEN_DOMINANT,True
+Libya,10,CHICKEN_MAHARAJA,Chicken Maharaja Mac,23.7,chicken,False,3,CHICKEN_DOMINANT,True
+Libya,11,SHRIMP_BURGER,Ebi Shrimp Burger,23.7,seafood,False,1,CHICKEN_DOMINANT,True
+Yemen,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Yemen,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,True
+Yemen,3,CHICKEN_LEGEND,Chicken Legend,99.0,chicken,False,1,CHICKEN_DOMINANT,True
+Yemen,4,LAMB_WRAP,Lamb Wrap,99.0,lamb,False,2,CHICKEN_DOMINANT,True
+Yemen,5,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,True
+Yemen,6,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,True
+Yemen,7,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,True
+Yemen,8,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,True
+Eritrea,1,MCCHICKEN,McChicken,99.0,chicken,False,1,CHICKEN_DOMINANT,False
+Eritrea,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,CHICKEN_DOMINANT,False
+Eritrea,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,CHICKEN_DOMINANT,False
+Eritrea,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,CHICKEN_DOMINANT,False
+Eritrea,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,CHICKEN_DOMINANT,False
+Eritrea,6,FRIES,French Fries,99.0,none,True,0,CHICKEN_DOMINANT,False
+Eritrea,7,APPLE_PIE,Apple Pie,99.0,none,True,0,CHICKEN_DOMINANT,False
+Eritrea,8,MCFLURRY,McFlurry,99.0,dairy,True,0,CHICKEN_DOMINANT,False
+Bhutan,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Bhutan,2,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Bhutan,3,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Bhutan,4,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Bhutan,5,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False
+Bhutan,6,MCSPICY,McSpicy Chicken,71.6,chicken,False,3,SEAFOOD_ADAPTED,False
+Bhutan,7,SHRIMP_BURGER,Ebi Shrimp Burger,71.6,seafood,False,1,SEAFOOD_ADAPTED,False
+Bhutan,8,RICE_BURGER,Rice Burger,71.6,chicken,False,1,SEAFOOD_ADAPTED,False
+Bhutan,9,MCALOO_TIKKI,McAloo Tikki,70.0,none,True,2,SEAFOOD_ADAPTED,False
+Bhutan,10,MCVEGGIE,McVeggie,70.0,none,True,1,SEAFOOD_ADAPTED,False
+Bhutan,11,VEGGIE_DELUXE,Veggie Deluxe,70.0,none,True,1,SEAFOOD_ADAPTED,False
+Bhutan,12,SPICY_CHICKEN,Spicy McChicken,65.1,chicken,False,2,SEAFOOD_ADAPTED,False
+Bhutan,13,PANEER_BURGER,McSpicy Paneer,39.8,dairy,True,3,SEAFOOD_ADAPTED,False
+Bhutan,14,FISH_FILLET_DLX,Fish Fillet Deluxe,34.9,fish,False,0,SEAFOOD_ADAPTED,False
+Timor-Leste,1,MCCHICKEN,McChicken,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Timor-Leste,2,SPICY_CHICKEN,Spicy McChicken,99.0,chicken,False,2,SEAFOOD_ADAPTED,False
+Timor-Leste,3,FILLET_O_FISH,Filet-O-Fish,99.0,fish,False,0,SEAFOOD_ADAPTED,False
+Timor-Leste,4,SHRIMP_BURGER,Ebi Shrimp Burger,99.0,seafood,False,1,SEAFOOD_ADAPTED,False
+Timor-Leste,5,RICE_BURGER,Rice Burger,99.0,chicken,False,1,SEAFOOD_ADAPTED,False
+Timor-Leste,6,FRIES,French Fries,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Timor-Leste,7,APPLE_PIE,Apple Pie,99.0,none,True,0,SEAFOOD_ADAPTED,False
+Timor-Leste,8,MCFLURRY,McFlurry,99.0,dairy,True,0,SEAFOOD_ADAPTED,False

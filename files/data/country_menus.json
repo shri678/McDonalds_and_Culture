@@ -1,0 +1,167 @@
+{
+  "USA": [
+    "BIG_MAC",
+    "QPC",
+    "DOUBLE_BURGER",
+    "ANGUS",
+    "MCRIB",
+    "BACON_EGG",
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "CHICKEN_LEGEND",
+    "FILLET_O_FISH",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Australia": [
+    "BIG_MAC",
+    "QPC",
+    "DOUBLE_BURGER",
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "FILLET_O_FISH",
+    "LAMB_WRAP",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "India": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "CHICKEN_MAHARAJA",
+    "MCALOO_TIKKI",
+    "MCVEGGIE",
+    "PANEER_BURGER",
+    "VEGGIE_DELUXE",
+    "FILLET_O_FISH",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Japan": [
+    "MCCHICKEN",
+    "FILLET_O_FISH",
+    "SHRIMP_BURGER",
+    "FISH_FILLET_DLX",
+    "RICE_BURGER",
+    "TERIYAKI",
+    "MCFLURRY",
+    "FRIES",
+    "APPLE_PIE",
+    "MCSPICY"
+  ],
+  "Saudi Arabia": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "CHICKEN_LEGEND",
+    "LAMB_WRAP",
+    "FILLET_O_FISH",
+    "MCSPICY",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Germany": [
+    "BIG_MAC",
+    "QPC",
+    "BACON_EGG",
+    "MCCHICKEN",
+    "FILLET_O_FISH",
+    "MCRIB",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Malaysia": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "CHICKEN_MAHARAJA",
+    "MCSPICY",
+    "FILLET_O_FISH",
+    "SHRIMP_BURGER",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Philippines": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "FILLET_O_FISH",
+    "SHRIMP_BURGER",
+    "RICE_BURGER",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Thailand": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "MCSPICY",
+    "FILLET_O_FISH",
+    "SHRIMP_BURGER",
+    "RICE_BURGER",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "South Korea": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "FILLET_O_FISH",
+    "SHRIMP_BURGER",
+    "RICE_BURGER",
+    "TERIYAKI",
+    "MCFLURRY",
+    "FRIES"
+  ],
+  "Israel": [
+    "MCCHICKEN",
+    "CHICKEN_LEGEND",
+    "GRILLED_CHICKEN",
+    "FILLET_O_FISH",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Egypt": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "CHICKEN_LEGEND",
+    "LAMB_WRAP",
+    "FILLET_O_FISH",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "Turkey": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "LAMB_WRAP",
+    "FILLET_O_FISH",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "UAE": [
+    "MCCHICKEN",
+    "SPICY_CHICKEN",
+    "CHICKEN_LEGEND",
+    "LAMB_WRAP",
+    "FILLET_O_FISH",
+    "MCSPICY",
+    "FRIES",
+    "APPLE_PIE",
+    "MCFLURRY"
+  ],
+  "France": [
+    "BIG_MAC",
+    "QPC",
+    "MCCHICKEN",
+    "CHICKEN_LEGEND",
+    "FILLET_O_FISH",
+    "MCFLURRY",
+    "FRIES",
+    "APPLE_PIE"
+  ]
+}
