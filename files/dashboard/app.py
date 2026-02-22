@@ -65,10 +65,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
-# ─────────────────────────────────────────────────────────────
-# Load Data & Model
-# ─────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_assets():
     from models.train import MenuRecommender
@@ -85,7 +81,6 @@ def load_assets():
     with open("data/cluster_labels.json") as f:
         cluster_labels = json.load(f)
 
-    # Check if trained model exists; otherwise train fresh
     if os.path.exists("models/recommender.pkl"):
         try:
             recommender = MenuRecommender.load("models/recommender.pkl")
@@ -96,7 +91,6 @@ def load_assets():
         recommender = MenuRecommender()
         recommender.fit(df_train, menu_items, country_menus, verbose=False)
 
-    # Pre-compute recommendations for all target countries
     recommendations = recommender.recommend(df_target)
 
     return df_train, df_target, df_all, menu_items, country_menus, cluster_labels, recommender, recommendations
@@ -111,10 +105,7 @@ except Exception as e:
 from utils.feature_engineering import compute_dietary_constraints
 from utils.visualization import CLUSTER_COLORS, CLUSTER_NAMES
 
-
-# ─────────────────────────────────────────────────────────────
 # Sidebar
-# ─────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## 🍔 Cultural Menu Optimizer")
     st.markdown("*Predicting localized McDonald's menus using cultural & religious data*")
@@ -150,25 +141,19 @@ with st.sidebar:
         wi_gdp     = st.slider("GDP per capita (USD)", 500, 80000, 5000)
         wi_urban   = st.slider("Urbanization %", 10, 100, 55)
 
-
-# ─────────────────────────────────────────────────────────────
 # Header
-# ─────────────────────────────────────────────────────────────
 st.markdown('<p class="main-header">🍔 Cultural Menu Optimizer</p>', unsafe_allow_html=True)
 st.markdown('<p class="sub-header">Predictive modeling for fast-food menu localization using religious, dietary, and economic data</p>', unsafe_allow_html=True)
 st.markdown("---")
 
-
-# ─────────────────────────────────────────────────────────────
 # Mode: Country Recommendation
-# ─────────────────────────────────────────────────────────────
 if mode == "🌍 Country Recommendation":
     recs = precomputed_recs[selected_country]
     country_data = compute_dietary_constraints(df_target).loc[selected_country]
 
     col1, col2, col3 = st.columns([1.2, 1.4, 1.4])
 
-    # ── Cultural Profile ─────────────────────────────────────
+    #Cultural Profile
     with col1:
         st.markdown(f"### 🌐 {selected_country}")
         st.markdown("**Cultural Profile**")
@@ -227,7 +212,7 @@ if mode == "🌍 Country Recommendation":
             chips_html += '<span class="constraint-chip chip-blue">🌶️ Spice Culture</span>'
         st.markdown(chips_html, unsafe_allow_html=True)
 
-    # ── Nearest Neighbors ────────────────────────────────────
+    #Nearest Neighbors
     with col2:
         st.markdown("### 🗺️ Nearest Cultural Neighbors")
         neighbors = recs["neighbors"]
@@ -256,7 +241,7 @@ if mode == "🌍 Country Recommendation":
             for item in recs["removed_items"]:
                 st.markdown(f"- ~~{item['name']}~~ — *{item['removal_reason']}*")
 
-    # ── Recommended Menu ─────────────────────────────────────
+    #Recommended Menu
     with col3:
         st.markdown(f"### 📋 Recommended Menu ({len(recs['recommended_menu'])} items)")
 
@@ -293,9 +278,8 @@ if mode == "🌍 Country Recommendation":
         plt.close()
 
 
-# ─────────────────────────────────────────────────────────────
 # Mode: Model Insights
-# ─────────────────────────────────────────────────────────────
+
 elif mode == "📊 Model Insights":
     from utils.visualization import (plot_feature_importance, plot_country_clusters_pca,
                                      plot_dietary_heatmap)
@@ -420,10 +404,7 @@ elif mode == "📊 Model Insights":
         }).T
         st.dataframe(df_eval)
 
-
-# ─────────────────────────────────────────────────────────────
 # Mode: What-If Explorer
-# ─────────────────────────────────────────────────────────────
 elif mode == "🔬 What-If Explorer":
     st.markdown("### 🔬 What-If Menu Explorer")
     st.markdown("Adjust cultural/religious/dietary parameters and instantly see which menu would be recommended.")
@@ -482,9 +463,7 @@ elif mode == "🔬 What-If Explorer":
         st.pyplot(fig)
         plt.close()
 
-# ─────────────────────────────────────────────────────────────
 # Footer
-# ─────────────────────────────────────────────────────────────
 st.markdown("---")
 st.markdown(
     "*Data sources: Pew Research Center (religion), FAO (meat consumption), "
