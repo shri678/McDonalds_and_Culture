@@ -1,13 +1,3 @@
-"""
-Evaluation, Visualization, and EDA for Cultural Menu Optimizer
-Generates plots for:
-- Feature importance
-- Country clusters (PCA/UMAP)
-- Similarity heatmaps
-- Recommendation confidence charts
-- Holdout evaluation results
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,7 +8,6 @@ from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
 import os
 import json
-
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utils.feature_engineering import get_feature_matrix, compute_dietary_constraints
@@ -32,7 +21,6 @@ plt.rcParams.update({
     "axes.titlesize": 13,
     "axes.labelsize": 11,
 })
-
 CLUSTER_COLORS = {
     0: "#E63946",  # Beef - red
     1: "#F4A261",  # Chicken - orange
@@ -40,7 +28,6 @@ CLUSTER_COLORS = {
     3: "#457B9D",  # Seafood - blue
     4: "#8338EC",  # Balanced - purple
 }
-
 CLUSTER_NAMES = {
     0: "Beef Dominant",
     1: "Chicken Dominant",
@@ -176,7 +163,6 @@ def plot_recommendation_results(recommendations: dict, country: str, save: bool 
     }
     colors = [protein_colors.get(p, "#999") for p in proteins]
 
-    # Reverse for bottom-to-top ordering
     names_r = names[::-1]
     scores_r = scores[::-1]
     colors_r = colors[::-1]
@@ -186,12 +172,10 @@ def plot_recommendation_results(recommendations: dict, country: str, save: bool 
     bars = ax.barh(names_r, scores_r, color=colors_r,
                    edgecolor="white", linewidth=0.8, height=0.7)
 
-    # Add confidence labels
     for bar, score, is_veg in zip(bars, scores_r, veg_r):
         ax.text(score + 0.5, bar.get_y() + bar.get_height() / 2,
                 f"{score:.1f}%  {'🌿' if is_veg else ''}", va="center", fontsize=9)
 
-    # Constraints banner
     constraints = recs["constraints"]
     constraint_text = (
         f"Beef Taboo: {constraints['beef_taboo']:.2f}  |  "
@@ -208,7 +192,6 @@ def plot_recommendation_results(recommendations: dict, country: str, save: bool 
     ax.axvline(x=50, color="#ccc", linestyle="--", linewidth=1)
     ax.grid(axis="x", alpha=0.2, linestyle="--")
 
-    # Legend
     legend_patches = [mpatches.Patch(color=c, label=p.title())
                       for p, c in protein_colors.items() if p in proteins]
     ax.legend(handles=legend_patches, loc="lower right", fontsize=8, ncol=2)
@@ -244,7 +227,6 @@ def plot_evaluation_results(eval_results: dict, save: bool = True):
     ax.legend(loc="upper right", fontsize=9)
     ax.grid(axis="y", alpha=0.3, linestyle="--")
 
-    # Mean lines
     ax.axhline(np.mean(jaccard), color="#2A9D8F", linestyle=":", linewidth=1.5, alpha=0.6)
     ax.axhline(np.mean(precision), color="#457B9D", linestyle=":", linewidth=1.5, alpha=0.6)
 
@@ -283,7 +265,6 @@ def plot_neighbor_similarity(recommendations: dict, country: str, save: bool = T
 
 
 if __name__ == "__main__":
-    # Quick test
     df_train = pd.read_csv("data/training_countries.csv", index_col="country")
     plot_dietary_heatmap(df_train)
     plot_country_clusters_pca(df_train)
