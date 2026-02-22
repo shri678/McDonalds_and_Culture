@@ -10,12 +10,12 @@ import time
 import subprocess
 import pandas as pd
 
-# ── Fix paths so all imports work regardless of where you run from ───────────
+#Fix paths so all imports work regardless of where you run from
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 sys.path.insert(0, ROOT)
 
-# ── Step 0: Check dependencies ───────────────────────────────────────────────
+#Step 0: Check dependencies
 def check_dependencies():
     missing = []
     for pkg in ["sklearn", "seaborn", "matplotlib"]:
@@ -34,11 +34,11 @@ def check_dependencies():
 
 check_dependencies()
 
-# ── Step 1: Generate data files ──────────────────────────────────────────────
+# Step 1: Generate data files
 print("Generating data files...")
 subprocess.run([sys.executable, os.path.join(ROOT, "data", "generate_data.py")], check=True)
 
-# ── Now safe to import project modules ───────────────────────────────────────
+#Now safe to import project modules
 from models.train import MenuRecommender, evaluate_model
 from utils.visualization import (
     plot_feature_importance,

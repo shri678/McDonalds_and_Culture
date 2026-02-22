@@ -14,10 +14,6 @@ import os
 
 np.random.seed(42)
 
-# ─────────────────────────────────────────────
-# 1. COUNTRIES WITH McDONALD'S — Training Data
-# ─────────────────────────────────────────────
-
 training_countries = {
     # Country: [christian%, muslim%, hindu%, buddhist%, jewish%, other%, none%,
     #           beef_kg, pork_kg, chicken_kg, fish_kg, lamb_kg,

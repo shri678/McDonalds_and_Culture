@@ -238,7 +238,7 @@
   "Nepal": {
     "cluster": 2,
     "cluster_name": "VEGETARIAN_HEAVY",
-    "cluster_confidence": 0.388,
+    "cluster_confidence": 0.384,
     "cluster_description": "Vegetarian options lead; minimal beef/pork; strong spice culture",
     "neighbors": [
       {
@@ -416,7 +416,7 @@
   "Bolivia": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.369,
+    "cluster_confidence": 0.374,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {
@@ -749,7 +749,7 @@
   "Myanmar": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.796,
+    "cluster_confidence": 0.798,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {
@@ -897,7 +897,7 @@
   "Mozambique": {
     "cluster": 1,
     "cluster_name": "CHICKEN_DOMINANT",
-    "cluster_confidence": 0.612,
+    "cluster_confidence": 0.61,
     "cluster_description": "Chicken-centric menus; halal-certified; strong spiced variants popular",
     "neighbors": [
       {
@@ -1015,7 +1015,7 @@
   "Zambia": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.523,
+    "cluster_confidence": 0.528,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {
@@ -1527,7 +1527,7 @@
   "Cuba": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.399,
+    "cluster_confidence": 0.397,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {
@@ -1705,7 +1705,7 @@
   "North Korea": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.787,
+    "cluster_confidence": 0.789,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {
@@ -2365,7 +2365,7 @@
   "Bhutan": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.533,
+    "cluster_confidence": 0.538,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {
@@ -2543,7 +2543,7 @@
   "Timor-Leste": {
     "cluster": 3,
     "cluster_name": "SEAFOOD_ADAPTED",
-    "cluster_confidence": 0.67,
+    "cluster_confidence": 0.672,
     "cluster_description": "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
     "neighbors": [
       {

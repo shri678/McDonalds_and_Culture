@@ -12,7 +12,6 @@ import json
 import pickle
 import os
 import sys
-
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.neighbors import NearestNeighbors
 from sklearn.model_selection import cross_val_score, StratifiedKFold
@@ -25,16 +24,6 @@ from utils.feature_engineering import get_feature_matrix, compute_dietary_constr
 
 
 class LocalizationClassifier:
-    """
-    Predicts which menu cluster a country belongs to based on cultural/religious/dietary features.
-    Menu Clusters:
-        0 = BEEF_DOMINANT
-        1 = CHICKEN_DOMINANT
-        2 = VEGETARIAN_HEAVY
-        3 = SEAFOOD_ADAPTED
-        4 = BALANCED_WESTERN
-    """
-
     CLUSTER_NAMES = {
         0: "BEEF_DOMINANT",
         1: "CHICKEN_DOMINANT",
@@ -42,7 +31,6 @@ class LocalizationClassifier:
         3: "SEAFOOD_ADAPTED",
         4: "BALANCED_WESTERN"
     }
-
     CLUSTER_DESCRIPTIONS = {
         0: "Heavy beef-focused menus; staple items like Big Mac and Quarter Pounder dominate",
         1: "Chicken-centric menus; halal-certified; strong spiced variants popular",
@@ -50,7 +38,6 @@ class LocalizationClassifier:
         3: "Fish/seafood prominent; lighter fare; East/Southeast Asian palate",
         4: "Balanced European-style menus; mix of beef, chicken, pork offerings"
     }
-
     def __init__(self):
         self.model = RandomForestClassifier(
             n_estimators=200,
@@ -61,7 +48,6 @@ class LocalizationClassifier:
         )
         self.feature_cols = None
         self.is_trained = False
-
     def train(self, df_train: pd.DataFrame, verbose: bool = True):
         X, self.feature_cols = get_feature_matrix(df_train)
         y = df_train["menu_cluster"]
@@ -104,11 +90,6 @@ class LocalizationClassifier:
 
 
 class CulturalNeighborFinder:
-    """
-    Finds culturally similar countries using cosine similarity on feature vectors.
-    Used to bootstrap menu recommendations via neighbor voting.
-    """
-
     def __init__(self, n_neighbors: int = 5):
         self.n_neighbors = n_neighbors
         self.knn = NearestNeighbors(
@@ -134,7 +115,6 @@ class CulturalNeighborFinder:
     def find_neighbors(self, df_query: pd.DataFrame, return_distances: bool = True) -> dict:
         """
         For each country in df_query, return its nearest training neighbors.
-        Returns dict: {country: [(neighbor, similarity_score), ...]}
         """
         assert self.is_fitted
         X_query, _ = get_feature_matrix(df_query)
@@ -163,10 +143,6 @@ class CulturalNeighborFinder:
 
 class MenuRecommender:
     """
-    Combines localization classifier + cultural neighbor finder to recommend
-    a localized menu for any country.
-
-    Logic:
     1. Find nearest cultural neighbors
     2. Aggregate their menus (weighted by similarity)
     3. Apply hard dietary constraints (remove beef if beef_taboo > threshold, etc.)
@@ -194,10 +170,6 @@ class MenuRecommender:
         self.neighbor_finder.fit(df_train, verbose=verbose)
 
     def recommend(self, df_target: pd.DataFrame, top_n: int = 14) -> dict:
-        """
-        Generate menu recommendations for each target country.
-        Returns dict: {country: {"menu": [...], "cluster": ..., "neighbors": [...], "constraints": {...}}}
-        """
         df_target_feat = compute_dietary_constraints(df_target)
         neighbors_map = self.neighbor_finder.find_neighbors(df_target)
         cluster_preds = self.classifier.predict(df_target)
@@ -379,7 +351,6 @@ def evaluate_model(recommender: MenuRecommender, holdout_countries: list) -> dic
 
 
 if __name__ == "__main__":
-    # Quick test run
     df_train = pd.read_csv("data/training_countries.csv", index_col="country")
     df_target = pd.read_csv("data/target_countries.csv", index_col="country")
 
