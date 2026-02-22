@@ -1,6 +1,6 @@
 """
 Feature Engineering for Cultural Menu Optimizer
-Transforms raw country data into model-ready features including:
+Transforms raw country data into model-ready features:
 - Dietary constraint scores
 - Cultural similarity vectors
 - Normalized economic features
@@ -13,7 +13,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 def compute_dietary_constraints(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Derive dietary constraint scores from religious and consumption data.
+    Getting dietary constraint scores from religious and consumption data.
     All scores range 0-1 where 1 = strong constraint/preference.
     """
     df = df.copy()
